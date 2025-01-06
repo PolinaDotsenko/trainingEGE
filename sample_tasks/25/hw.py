@@ -46,22 +46,15 @@
 
 
 #4 ?????
-# l = 0
-# def d(n):
-#     lst = []
-#     for i in range(1, int(n ** 0.5) + 1):
-#         if n % i == 0:
-#             lst.append((n // i) - i)
-#     return sorted(set(lst))
-
-# c = 0
-# for i in range(2000000, 3000000):
-#     n = d(i)
-#     for x in n:
-#         if x <= 115:
-#             c += 1
-#     if c >= 3:
-#         print(n)
+for i in range(2000000, 3000001):
+    sqrti = i**0.5 
+    k = 0
+    for j in range(1, round(sqrti)):
+        if i % j == 0:
+            if (abs(i / j) - j) <= 115:
+                k += 1
+    if k > 2: print(i)
+    k = 0
 
 
 #1 pro
@@ -87,18 +80,18 @@
     
             
 #2
-def d(n):
-    lst = []
-    for i in range(1, int(n ** 0.5) + 1):
-        if n % i == 0:
-            global l
-            l = n // i
-            m = l - i
-            if m <= 90:
-                lst.append(m)
-    return sorted(set(lst))
+# def d(n):
+#     lst = []
+#     for i in range(1, int(n ** 0.5) + 1):
+#         if n % i == 0:
+#             global l
+#             l = n // i
+#             m = l - i
+#             if m <= 90:
+#                 lst.append(m)
+#     return sorted(set(lst))
 
-for i in range(500000, 1000001):
-    n = d(i)
-    if len(n) >= 3:
-        print(i, l)
+# for i in range(500000, 1000001):
+#     n = d(i)
+#     if len(n) >= 3:
+#         print(i, l)
