@@ -91,7 +91,3 @@
 #     r = N - int(n1, 2)
 #     if r == 105:
 #         print(j)
-    
-for i in range(1, 13):
-    n = bin(i)[2:]
-print(n, "hdsk")
