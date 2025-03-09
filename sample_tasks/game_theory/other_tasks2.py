@@ -8,5 +8,3 @@
 # print([s for s in range(1, 41) if f(4, s, 2)])      #all на any
 # print([s for s in range(1, 41) if not f(4, s, 1) and f(4, s, 3)])
 # print([s for s in range(1, 41) if not f(4, s, 2) and f(4, s, 4)])
-
-

@@ -15,11 +15,11 @@
 
 
 #3 
-# from fnmatch import *
+from fnmatch import *
 
-# for i in range(17, 10**9 + 1, 17):
-#     if fnmatch(str(i), "1?34567?9"):
-#         print(i, i // 17)
+for i in range(17, 10**9 + 1, 17):
+    if fnmatch(str(i), "1?34567?9"):
+        print(i, i // 17)
 
 
 #4
