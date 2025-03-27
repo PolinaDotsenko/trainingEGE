@@ -32,3 +32,31 @@
 #     if n.count("1") % 5 != 0:
 #         c += 1
 # print(c)
+
+
+#5
+# mask = "255.255.254.0"
+# s = mask.split(".")
+# for i in s:
+#     print(bin(int(i))[2:])
+# #всего 8 нулей
+# print("result:", 2**8 - 2)
+
+
+#!!!6
+# mask = "255.255.255.128"
+# a = mask.split(".")
+# for i in a:
+#     print(bin(int(i))[2:])
+# #всего 7 нулей
+# print(2**7 - 2) 
+
+
+#!!!7
+# from ipaddress import *
+
+# for mask in range(33):
+#     net = ip_network(f"220.128.112.142/{mask}", 0)
+#     a = str(net).split("/")
+#     if a[0] == "220.128.96.0":
+#         print(net.netmask)

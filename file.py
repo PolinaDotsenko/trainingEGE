@@ -69,3 +69,16 @@
 # print((f(2024) + 2 * f(2023)) / f(2022))
 
 
+#3
+# res = []
+# f = open("trainingEGE\\sample_tasks\\column.txt")
+# a = [i for i in f]
+# for i in a:
+#     if a.count(i) > 5:
+#         res.append(i)
+# print(len(set(res)))
+
+
+# print(bin(248)[2:])
+# print(bin(227)[2:])
+# print(int("11", 2))
