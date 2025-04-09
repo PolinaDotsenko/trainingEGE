@@ -82,3 +82,11 @@
 # print(bin(248)[2:])
 # print(bin(227)[2:])
 # print(int("11", 2))
+
+
+#4
+res = []
+f = open("D:\\VSCodeProjects\\trainingEGE\\files 26\\inf_22_10_20_26.txt")
+for line in f:
+    res.append(line)
+print(res)
