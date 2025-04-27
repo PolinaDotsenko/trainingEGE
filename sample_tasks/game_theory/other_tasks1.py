@@ -21,3 +21,27 @@
 # print([s for s in range(1, 20) if not f(s, 1) and f(s, 2)])
 # print([s for s in range(1, 20) if not f(s, 1) and f(s, 3)])
 # print([s for s in range(1, 20) if not f(s, 2) and f(s, 4)])
+
+
+#3
+# def f(s, n):
+#     if s >= 42: return n % 2 == 0
+#     if n == 0: return 0
+#     h = [f(s + 1, n - 1), f(s + 3, n - 1), f(s * 2, n - 1)]
+#     return any(h) if (n - 1) % 2 == 0 else all(h)
+
+# print([s for s in range(0, 42) if not f(s, 1) and f(s, 2)])
+# print([s for s in range(0, 42) if not f(s, 1) and f(s, 3)])
+# print([s for s in range(0, 42) if not f(s, 2) and f(s, 4)])
+
+
+#4
+# def f(s, n):
+#     if s >= 69: return n % 2 == 0
+#     if n == 0: return 0
+#     h = [f(s + 1, n - 1), f(s + 4, n - 1), f(s * 5, n - 1)]
+#     return any(h) if (n - 1) % 2 == 0 else all(h)
+
+# print([s for s in range(1, 69) if f(s, 2)])
+# print([s for s in range(1, 69) if not f(s, 1) and f(s, 3)])
+# print([s for s in range(1, 69) if not f(s, 2) and f(s, 4)])
