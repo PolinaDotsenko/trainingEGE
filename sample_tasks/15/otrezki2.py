@@ -101,20 +101,20 @@
 
 
 #7
-# from itertools import *
+from itertools import *
 
-# def f(x):
-#     p = 17 <= x <= 40
-#     q = 20 <= x <= 57
-#     a = a1 <= x <= a2
-#     return (not a) <= ((p and q) <= a)
+def f(x):
+    p = 17 <= x <= 40
+    q = 20 <= x <= 57
+    a = a1 <= x <= a2
+    return (not a) <= ((p and q) <= a)
 
-# lst = []
-# ox = [i / 4 for i in range(16*4, 58*4)]
-# for a1, a2 in combinations(ox, 2):
-#     if all(f(x) == 1 for x in ox):
-#         lst.append(a2 - a1)
-# print(min(lst))
+lst = []
+ox = [i / 4 for i in range(16*4, 58*4)]
+for a1, a2 in combinations(ox, 2):
+    if all(f(x) == 1 for x in ox):
+        lst.append(a2 - a1)
+print(min(lst))
 
 
 #8
