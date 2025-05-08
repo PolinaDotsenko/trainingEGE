@@ -117,3 +117,48 @@
 #     if convert(n, 3).count(2) >= 2000:
 #         print(x)
 #         break
+
+
+#25
+# from fnmatch import *
+
+# for i in range(1917, 10**10 + 1, 1917):
+#     if fnmatch(str(i), "3?12?14*5"):
+#         print(i, i // 1917)
+
+
+#19-21
+# def f(s, n):
+#     if s <= 19: return n % 2 == 0
+#     if n == 0: return 0
+#     h = [f(s - 2, n - 1), f(s - 5, n - 1), f(s // 3, n - 1)]
+#     return any(h) if (n - 1) % 2 == 0 else all(h)
+
+# print([s for s in range(20, 300) if f(s, 2)])
+# print([s for s in range(20, 300) if not f(s, 1) and f(s, 3)])
+# print([s for s in range(20, 300) if not f(s, 2) and f(s, 4)])
+
+
+#9
+# c = 0
+# for i in open("probniki\\9-247.txt"):
+#     lst = sorted([int(x) for x in i.split()])
+#     s = set(lst)
+#     if list(s) == lst:
+#         if max(lst) + min(lst) > lst[1] + lst[2]:
+#             c += 1
+# print(c)
+
+
+#13
+# from ipaddress import *
+
+# c = 0
+# net = ip_network("172.16.168.0/255.255.248.0", 0)
+# for i in net:
+#     s = str(i).split(".")
+#     lst = [int(x) for x in s]
+#     b = "".join([bin(j)[2:] for j in lst])
+#     if b.count("1") % 5 != 0:
+#         c += 1
+# print(c)
