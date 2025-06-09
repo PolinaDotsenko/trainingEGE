@@ -15,6 +15,3 @@
 #     net = ip_network(f"113.191.169.34/{mask}", 0)
 #     print(net)
 # print(32 - 19)
-
-
-#3
